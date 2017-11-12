@@ -4,6 +4,7 @@ body {
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  margin: 0;
 
 }
 /*Header Container*/
@@ -49,21 +50,9 @@ header{
   top: 70px;
   width: 1200px;
   margin: auto;
-  justify-content: center;
+  justify-content: space-around;
 }
-/*.box{
-  border: 1px solid white;
-  display: flex;
-  flex-direction: column;
-}*/
-h2, h3, h4, h5 {
-  border: 1px solid white;
-  align-content: center;
-  text-align: center;
-  background-color: black;
-  margin: 0;
-  padding: 10px;
-}
+/*Our Mission*/
 .mission{
   border: 1px solid white;
   display: flex;
@@ -73,7 +62,16 @@ h2, h3, h4, h5 {
   text-align: center;
   flex-direction: column;
 }
-
+.mission h2, .mission h4, .contact h2, .contact h5{
+  background-color: black;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+/*Tea of the Month*/
+  /*parent box*/
 .featured{
   border: 1px solid white;
   display: flex;
@@ -84,41 +82,38 @@ h2, h3, h4, h5 {
   width: 1000px;
   margin: auto;
 }
-
-/*
-.feathead{
-  border: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  background-color: black;
-  width: 100%;
-}*/
+/*container for tea images*/
 .teaimgs{
   border: 1px solid white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  marigin: 0;
+  justify-content: center;
+  align-content: center;
+  width: 1000px;
+  margin: 0;
 }
+/*container for individual image and caption*/
 .teas{
   border:1px solid white;
   display: inline-block;
   flex-direction: column;
   width:300px;
+  padding: 10px;
 }
-h4{
-  text-align: center;
-}
+/*tea photos*/
 .imgtea{
   border: 1px solid white;
   width: 300px;
   height: 200px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
-
+/*tea captions*/
+.teas h4{
+  margin: 0;
+}
+/*Locations */
+  /*parent box*/
 .locations {
   border: 1px solid white;
   display: flex;
@@ -135,20 +130,45 @@ h4{
 }
 .town {
   border: 1px solid white;
+  opacity: 1;
   display: flex;
   flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  margin: 5px 20px;
 }
+.town h2{
+  margin:0;
+  padding: 10px;
+}
+.town span{
+  padding: 20px 10px;
+}
+/*Contact*/
 .contact{
   border: 1px solid white;
   height: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-.footer{
+/*footer*/
+footer{
   border: 1px solid white;
-  text-align: right;
-  margin-left: 20px;
+  display: flex;
+  width: 100%;
+  height: 69px;
+  background-color: black;
 }
+footer span{
+  display: block;
+  padding:20px 10px;
+}
+
 /*images*/
 #mission{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
